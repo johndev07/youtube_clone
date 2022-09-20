@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/system";
 import { Link } from "react-router-dom";
-import { logo } from "../utils/constants";
+// import { logo } from "../utils/constants";
 import { SearchBar } from ".";
 const Navbar = () => {
   return (
@@ -16,8 +16,14 @@ const Navbar = () => {
         justifyContent: "space-between",
       }}
     >
-      <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-        <img src={logo} alt="logo" height={45} />
+      <Link
+        to="/"
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <img src="/ytlogo.png" alt="logo" height={75} />
       </Link>
       <SearchBar />
     </Stack>
